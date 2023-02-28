@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS gist_db;
+CREATE DATABASE gist_db;

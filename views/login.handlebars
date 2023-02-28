@@ -1,0 +1,24 @@
+{{> main-open}}
+    <section class="card text-center">
+        <div class="card-body">
+            <div class="card-title">
+                <h3 class="">{{blogTitle.title}}</h3>
+            </div>
+<form id="login">
+    <div class="card-text">
+        <label for="loginUsername">username</label><br>
+        <input type="text" placeholder="insert username" id="loginUsername">
+    </div>
+<div class="card-text">
+    <label for="loginPassword">password</label><br>
+    <input type="text" placeholder="insert password" id="loginPassword">
+</div>
+    <div class="form-btn card-body">
+        <button>login</button><br>
+        <a href="/signup">signup</a>
+</div>
+</form>
+</div>
+</section> 
+{{> main-close}}
+{{> script-login}}

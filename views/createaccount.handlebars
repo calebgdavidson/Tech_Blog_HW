@@ -1,0 +1,24 @@
+ {{> main-open}}
+<section class="card text-center">
+    <div class="card-body">
+        <div class="card-title">
+            <h3 id="title">{{formTitle.title}}</h3>
+        </div>
+            <form id="signup">
+                <div class="card-text">
+                    <label for="signupUsername">username</label><br>
+                    <input type="text" placeholder="insert username" id="signupUsername">
+                </div>
+                        <div class="card-text">
+                            <label for="signupPassword">password</label><br>
+                            <input type="text" placeholder="insert password" id="signupPassword">
+                        </div>
+                                <div class="form-btn card-body">
+                                    <button>create account</button><br>
+                                    <a href="/login">login</a>
+                                </div>
+            </form>
+        </div>
+</section>
+  {{> main-close}}
+  {{> script-signup}}

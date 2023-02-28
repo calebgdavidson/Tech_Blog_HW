@@ -1,0 +1,39 @@
+{{> main-open}}
+<h1>tech blog</h1>
+<section id="currentblogs">
+{{#each blogs}}
+    <section class="card">
+        <a href="/blogs/{{id}}" class="card-body">
+            <h3 class="card-title">{{title}}</h3> 
+            <p class="card-text">{{content}}</p>
+        </a>
+    </section>
+{{/each}}
+</section>
+<section id="createNew" class="card text-center">
+    <div class="card-body">
+        <h3 class="card-title">teach blog </h3>
+        <form id="newblog">
+            <div class="card-text"></div>
+                <label for="title">title</label><br>
+                <input type="text" id="title" placeholder="title">
+             </div>
+                    <div class="card-text"></div>
+                        <label for="content">blog content</label>
+                        <textarea id="content" placeholder="content"></textarea>
+                    </div>
+                            <button id="create">create</button>
+         </form>
+    </div>
+</section>
+    <form id="newPost">
+    <button>post</button>
+    </form>
+<section class="card">
+<a href="/blogs/{{hid}}" class="card-body">
+    <h3 class="card-title">{{title}}</h3> 
+    <p class="card-text">{{content}}</p>
+</a>
+</section>
+{{> main-close}}
+{{> script-dashboard}}
